@@ -27,7 +27,7 @@
 
         <q-btn
           :to="{ name: 'buy.insurance' }"
-          style="min-height;auto"
+          style="min-height:auto"
           flat
           no-caps
           no-wrap
@@ -146,7 +146,8 @@
         <h5 class="text-h4 text-black text-weight-bold">Recent Orders</h5>
       </div>
       <div class="q-mt-md" v-if="!recentOrders.length">
-        <q-skeleton height="150px" />
+        <h5 class="text-black text-weight-bold">No Delivery Orders Found</h5>
+        <q-skeleton height="50px" />
       </div>
       <q-list class="q-mt-md" v-else bordered>
         <q-item
